@@ -19,10 +19,9 @@ export const Services: React.FC = () => {
     <div className="w-full">
       <div className="flex items-center gap-3 mb-12">
         <h2 className="text-3xl font-mono font-bold text-cyber-neon">
-          AVAILABLE_SERVICES
+          Services
         </h2>
         <div className="h-px bg-gray-800 flex-grow"></div>
-        <div className="text-xs font-mono text-gray-500">SEC_OPS_ENABLED</div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -46,11 +45,6 @@ export const Services: React.FC = () => {
             <p className="text-gray-400 group-hover:text-cyber-black/80 transition-colors leading-relaxed">
               {service.description}
             </p>
-
-            <div className="mt-6 flex items-center gap-2 text-xs font-mono text-gray-500 group-hover:text-cyber-black/60">
-              <span className="w-2 h-2 bg-cyber-green rounded-full animate-pulse"></span>
-              ACTIVE
-            </div>
           </div>
         ))}
       </div>

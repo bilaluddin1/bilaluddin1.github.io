@@ -1,5 +1,3 @@
-import React from 'react';
-import { Shield, Lock, Globe, Server, Code, Database, Terminal } from 'lucide-react';
 import { Project, ExperienceItem } from './types';
 
 export const HERO_TITLES = [

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Terminal } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { HERO_TITLES } from '../constants';
 
 export const Hero: React.FC = () => {
@@ -27,11 +27,6 @@ export const Hero: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center text-center space-y-8 max-w-4xl mx-auto">
-      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyber-green/30 bg-cyber-green/10 text-cyber-green mb-4 animate-pulse-fast">
-        <span className="w-2 h-2 rounded-full bg-cyber-green"></span>
-        <span className="text-xs font-mono font-bold tracking-widest">SYSTEM ONLINE</span>
-      </div>
-
       <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
         Hello, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyber-neon to-blue-500">Bilal Uddin</span>
       </h1>
@@ -47,16 +42,6 @@ export const Hero: React.FC = () => {
         Security Engineer with expertise in AppSec, Cloud Security, and DevSecOps. 
         Skilled at automating workflows and embedding security into CI/CD pipelines to drive a secure development culture.
       </p>
-
-      <div className="flex flex-col sm:flex-row gap-4 pt-8">
-        <a href="#projects" className="px-8 py-3 bg-cyber-neon text-cyber-black font-bold rounded hover:bg-cyan-300 transition-colors flex items-center justify-center gap-2">
-          <Terminal className="w-5 h-5" />
-          View Operations
-        </a>
-        <a href="#contact" className="px-8 py-3 border border-gray-600 text-white rounded hover:border-cyber-neon hover:text-cyber-neon transition-colors">
-          Initialize Contact
-        </a>
-      </div>
 
       <div className="absolute bottom-10 animate-bounce">
         <a href="#about" className="text-gray-500 hover:text-white transition-colors">

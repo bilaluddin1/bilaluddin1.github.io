@@ -12,7 +12,6 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Services', href: '#services' },
-    { name: 'Terminal', href: '#terminal' },
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
@@ -24,7 +23,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
             <ShieldCheck className="w-8 h-8 text-cyber-neon" />
-            <span className="font-mono font-bold text-xl tracking-tighter text-white">SENTINEL<span className="text-cyber-neon">.SEC</span></span>
+            <span className="font-mono font-bold text-xl tracking-tighter text-white">Bilal<span className="text-cyber-neon">.Uddin</span></span>
           </div>
 
           {/* Desktop Menu */}

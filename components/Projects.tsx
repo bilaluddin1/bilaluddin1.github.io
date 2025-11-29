@@ -7,7 +7,7 @@ export const Projects: React.FC = () => {
     <div>
         <h2 className="text-3xl font-mono font-bold text-cyber-neon flex items-center gap-3 mb-12">
           <Layers className="w-8 h-8" />
-          <span>PROJECT_DATABASE</span>
+          <span>Featured Projects</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">

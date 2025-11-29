@@ -7,7 +7,7 @@ export const Experience: React.FC = () => {
     <div>
        <h2 className="text-3xl font-mono font-bold text-cyber-neon flex items-center gap-3 mb-12">
           <Briefcase className="w-8 h-8" />
-          <span>EMPLOYMENT_LOGS</span>
+          <span>Experience</span>
         </h2>
 
         <div className="relative border-l border-gray-800 ml-3 md:ml-6 space-y-12">

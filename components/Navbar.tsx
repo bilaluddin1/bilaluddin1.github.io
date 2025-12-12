@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldCheck, Menu, X } from 'lucide-react';
+import { ShieldCheck, Menu, X, Download } from 'lucide-react';
 
 interface NavbarProps {
   activeSection: string;
@@ -13,7 +13,6 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
     { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
     { name: 'Services', href: '#services' },
-    { name: 'Resume', href: '#resume' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -42,6 +41,14 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
                   {link.name}
                 </a>
               ))}
+              <a
+                href="/resume.pdf"
+                download="Bilal_Uddin_Resume.pdf"
+                className="flex items-center gap-2 px-4 py-2 rounded-md text-sm font-mono font-medium bg-cyber-neon text-black hover:bg-cyan-400 transition-all duration-300 shadow-[0_0_15px_rgba(0,243,255,0.3)]"
+              >
+                <Download className="w-4 h-4" />
+                Resume
+              </a>
             </div>
           </div>
 
@@ -75,6 +82,14 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
                 {link.name}
               </a>
             ))}
+            <a
+              href="/resume.pdf"
+              download="Bilal_Uddin_Resume.pdf"
+              className="flex items-center gap-2 px-3 py-2 rounded-md text-base font-mono font-medium bg-cyber-neon text-black hover:bg-cyan-400 transition-all"
+            >
+              <Download className="w-4 h-4" />
+              Download Resume
+            </a>
           </div>
         </div>
       )}

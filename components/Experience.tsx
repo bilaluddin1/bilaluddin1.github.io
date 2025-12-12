@@ -52,35 +52,35 @@ export const Experience: React.FC = () => {
                             {job.role} <span className="text-gray-500">@</span> <span className="text-cyber-green">{job.company}</span>
                         </h3>
                         {job.period && (
-                            <div className="flex items-center text-sm font-mono text-gray-500 mt-1 sm:mt-0">
-                                <Calendar className="w-4 h-4 mr-2" />
-                                {job.period}
-                            </div>
+                        <div className="flex items-center text-sm font-mono text-gray-500 mt-1 sm:mt-0">
+                            <Calendar className="w-4 h-4 mr-2" />
+                            {job.period}
+                        </div>
                         )}
                     </div>
 
                     {(job.description.length > 0 || job.skills.length > 0) && (
-                        <div className="bg-gray-900/30 rounded border border-gray-800/50 p-6 hover:border-gray-700 transition-all">
+                    <div className="bg-gray-900/30 rounded border border-gray-800/50 p-6 hover:border-gray-700 transition-all">
                             {job.description.length > 0 && (
-                                <ul className="space-y-2 mb-4">
-                                    {job.description.map((desc, i) => (
-                                        <li key={i} className="text-gray-400 flex items-start">
-                                            <span className="mr-2 text-cyber-neon">›</span>
+                        <ul className="space-y-2 mb-4">
+                            {job.description.map((desc, i) => (
+                                <li key={i} className="text-gray-400 flex items-start">
+                                    <span className="mr-2 text-cyber-neon">›</span>
                                             <span>{highlightTerms(desc)}</span>
-                                        </li>
-                                    ))}
-                                </ul>
+                                </li>
+                            ))}
+                        </ul>
                             )}
                             {job.skills.length > 0 && (
-                                <div className="flex flex-wrap gap-2 pt-2">
-                                    {job.skills.map(skill => (
-                                        <span key={skill} className="px-2 py-1 text-xs font-mono rounded bg-gray-800 text-gray-300 border border-gray-700">
-                                            {skill}
-                                        </span>
-                                    ))}
-                                </div>
-                            )}
+                        <div className="flex flex-wrap gap-2 pt-2">
+                            {job.skills.map(skill => (
+                                <span key={skill} className="px-2 py-1 text-xs font-mono rounded bg-gray-800 text-gray-300 border border-gray-700">
+                                    {skill}
+                                </span>
+                            ))}
                         </div>
+                            )}
+                    </div>
                     )}
                 </div>
             ))}

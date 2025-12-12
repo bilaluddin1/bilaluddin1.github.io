@@ -59,9 +59,9 @@ export const About: React.FC = () => {
                         <h4 className="font-bold text-white">Security Information and Event Management</h4>
                         <p className="text-sm text-gray-400">Wazuh SIEM</p>
                     </div>
+                    </div>
                 </div>
             </div>
-          </div>
         </div>
       </div>
     </div>

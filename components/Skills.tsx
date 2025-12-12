@@ -27,9 +27,9 @@ export const Skills: React.FC = () => {
   return (
     <div className="flex flex-col items-center">
       <h2 className="text-3xl font-mono font-bold text-cyber-neon flex items-center gap-3 mb-12">
-        <Activity className="w-8 h-8" />
-        <span>Skills & Expertise</span>
-      </h2>
+          <Activity className="w-8 h-8" />
+          <span>Skills & Expertise</span>
+        </h2>
 
       <div className="h-[500px] w-full max-w-3xl bg-gray-900/30 rounded-xl border border-gray-800 backdrop-blur-sm p-4 relative">
         <ResponsiveContainer width="100%" height="100%">

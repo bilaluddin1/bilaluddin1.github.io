@@ -5,6 +5,7 @@ import { About } from './components/About';
 import { Skills } from './components/Skills';
 import { Services } from './components/Services';
 import { Experience } from './components/Experience';
+import { Resume } from './components/Resume';
 import { Contact } from './components/Contact';
 
 const App: React.FC = () => {
@@ -13,7 +14,7 @@ const App: React.FC = () => {
   // Simple scroll spy to update active section
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'skills', 'experience', 'services', 'contact'];
+      const sections = ['hero', 'about', 'skills', 'experience', 'services', 'resume', 'contact'];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -53,6 +54,10 @@ const App: React.FC = () => {
 
         <section id="services" className="scroll-mt-24">
            <Services />
+        </section>
+
+        <section id="resume" className="scroll-mt-24">
+           <Resume />
         </section>
 
         <section id="contact" className="scroll-mt-24">
